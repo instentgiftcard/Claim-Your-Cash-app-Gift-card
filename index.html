@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash App $750 Gift Card</title>
+    <style>
+        /* CSS কোড */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #4CAF50, #8BC34A);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .landing-page {
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        header {
+            position: relative;
+            padding: 20px;
+        }
+
+        .menu-btn {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            cursor: pointer;
+        }
+
+        .menu-btn span {
+            display: block;
+            background: #fff;
+            height: 3px;
+            margin: 4px 0;
+            width: 25px;
+        }
+
+        .content-box {
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+
+        .gift-card {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .claim-btn {
+            background: #FF5722;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: pulse 1.5s infinite;
+        }
+
+        .offer-details, .social-proof, .countdown {
+            margin: 20px 0;
+        }
+
+        .popup {
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            display: none;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="landing-page">
+        <!-- Header -->
+        <header>
+            <div class="menu-btn" onclick="window.location.href='https://smrturl.co/a/s580b9e7f2a/1706?s1=team'">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1>Claim Your $750 Cash App Gift Card!</h1>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="content-box">
+                <img src="https://i.ibb.co/Sn80Ty4/6d9784ae528e.gif" alt="Cash App $750 Gift Card" class="gift-card">
+                <button class="claim-btn" onclick="window.location.href='https://smrturl.co/a/s580b9e7f2a/1706?s1=team'">
+                    Claim Now
+                </button>
+            </div>
+        </main>
+
+        <!-- Offer Details -->
+        <section class="offer-details">
+            <h2>Offer Details</h2>
+            <p>Get a $750 Cash App Gift Card absolutely free! Limited time offer.</p>
+            <p>Join 4,578+ users who have already claimed this amazing deal!</p>
+        </section>
+
+        <!-- Social Proof -->
+        <section class="social-proof">
+            <h3>What Our Users Say</h3>
+            <div class="reviews">
+                <p>"This gift card really helped me out! Highly recommend!" - Sarah J.</p>
+                <p>"Fast and secure! Got my $750 instantly!" - Mike R.</p>
+            </div>
+        </section>
+
+        <!-- Countdown Timer -->
+        <div class="countdown">
+            <p>Offer expires in:</p>
+            <span id="timer">00:10:00</span>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Act fast! Limited stock available.</p>
+        </footer>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup">
+        <p>4,578 users have already claimed this gift card!</p>
+    </div>
+
+    <script>
+        // JavaScript কোড
+        document.addEventListener("DOMContentLoaded", () => {
+            // Countdown Timer
+            const timer = document.getElementById("timer");
+            let timeLeft = 10 * 60; // 10 minutes in seconds
+
+            const updateTimer = () => {
+                const minutes = Math.floor(timeLeft / 60);
+                const seconds = timeLeft % 60;
+                timer.textContent = `${minutes.toString().padStart(2, "0")}:${seconds
+                    .toString()
+                    .padStart(2, "0")}`;
+                if (timeLeft > 0) timeLeft--;
+            };
+            setInterval(updateTimer, 1000);
+
+            // Popup Notification
+            const popup = document.querySelector(".popup");
+            setTimeout(() => {
+                popup.style.display = "block";
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
